@@ -46,12 +46,22 @@ class chatbook:
 
         print("\n")
         self.menu()
+
     def mypost(self):
         if self.loggedin==True:
             txt=input("enter the content for the post")
             print(f"the post is uploaded{txt}")
         else:
             print("please sign in to post")
+        print("\n")
+        self.menu()
+    def sendmsg(self):
+        if self.loggedin==True:
+            txt=input("enter message to send")
+            frnd=input("whom to send")
+            print(f"message send to friend { frnd }")
+        else:
+              print("please sign in to post")
         print("\n")
         self.menu()
 
