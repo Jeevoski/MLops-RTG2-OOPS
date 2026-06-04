@@ -19,7 +19,7 @@ class chatbook:
         elif user_input=="3":
             self.mypost()
         elif user_input=="4":
-            pass
+            self.sendmsg()
         else:
             exit()
 
